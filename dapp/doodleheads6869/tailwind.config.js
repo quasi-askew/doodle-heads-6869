@@ -17,6 +17,9 @@ module.exports = {
           800: "#474578",
           900: "#A4A4F4",
         },
+        pink: {
+          800: "#FFA4D4"
+        },
         green: {
           100: "#A8FFC5",
           200: "#A8FFC5",
@@ -26,7 +29,7 @@ module.exports = {
           600: "#A8FFC5",
           700: "#A8FFC5",
           800: "#A8FFC5",
-          900: "#A8FFC5",
+          900: "#79E8B3",
         },
       },
       fontFamily: {

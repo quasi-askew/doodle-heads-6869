@@ -4,13 +4,9 @@ import Spacedood from "../components/Spacedood";
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <Hero />
       <Spacedood />
-    </>
+    </Layout>
   );
 }
-
-Home.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
