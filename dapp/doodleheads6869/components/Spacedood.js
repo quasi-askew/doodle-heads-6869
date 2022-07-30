@@ -1,10 +1,20 @@
+import { MotionConfig } from "framer-motion";
 import Image from "next/image";
 import spaceDoodGif from "../public/space-dood.gif";
+import {
+  motion
+} from "framer-motion";
 
-const Spacedood = ({}) => {
+const Spacedood = ({ }) => {
+
   return (
-    <div className="bg-green-500">
-      <div className="mx-auto max-w-sm">
+    <div className="mt-8 mx-auto max-w-sm">
+      <h2 className="text-white my-5 text-xl font-extrabold ">You are minting a head! Weeeee!!!</h2>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <Image
           alt="Space Dood 6869"
           src={spaceDoodGif}
@@ -12,7 +22,7 @@ const Spacedood = ({}) => {
           width={600}
           height={600}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
