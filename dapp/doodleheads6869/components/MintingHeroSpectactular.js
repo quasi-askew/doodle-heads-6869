@@ -104,7 +104,7 @@ const MintingHeroSpectactular = ({ fcl, fclTypes, user, images, setImages }) => 
           <img 
             src={_imageSrc[index]} 
             alt={"NFT #" + number}
-            key={numberer}
+            key={number}
           />
       )))
     }
