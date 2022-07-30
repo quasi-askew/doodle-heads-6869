@@ -101,12 +101,11 @@ const MintingHeroSpectactular = ({ fcl, fclTypes, user, images, setImages }) => 
       console.log({ images })
       console.log(_imageSrc.length)
       setImages((Array.from({ length: _imageSrc.length }, (_, i) => i).map((number, index) =>
-        // <div key={number} className="w-32">
           <img 
             src={_imageSrc[index]} 
             alt={"NFT #" + number}
+            key={numberer}
           />
-        // </div>
       )))
     }
   }
